@@ -7,6 +7,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+    
+    <!--Configurar WPA-->
+    <!--COLOR DE LA APP-->
+    <meta name="theme-color" content="#008BFF" />
+    <meta name="HandheldFriendly" content="true" />
+    <!--Meta etiquetas para PWA para Apple-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transluce"/>
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="apple-touch-starup-image" href="img/favicon.png">
+    <!--Configuraion General de PWA-->
+    <link rel="manifest" href="manifest.json">
+    <script src="js/script.js"></script>
+    
     <title>Cafe Royer's</title>
 </head>
 <body>
@@ -14,8 +29,8 @@
         <div class="contenedor">
             <nav class="menu">
                 <a href="#" id="btn-acerca-de">Acerca de</a>
-                <a href="#" id="btn-menu">Menú</a>
-                <a href="#" id="btn-galeria">Galería</a>
+                <a href="#" id="btn-menu">Catálogo</a>
+                <!--<a href="#" id="btn-galeria">Galería</a>-->
                 <a href="#" id="btn-ubicacion">Ubicación</a>
             </nav>
 
@@ -41,63 +56,63 @@
 
         <section class="menu">
             <div class="contenedor">
-                <h3 class="titulo" id="platillos">Los más populares del mes</h3>
+                <h3 class="titulo" id="platillos">Te puede interesar</h3>
                 <div class="contenedor-menu">
                     <div class="contenedor-menu2">
                         <article>
-                            <p class="categoria">De comer</p>
+                            <p class="categoria">Próximos en llegar</p>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$320</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">La biblia</p>
+                                <p class="precio">Pasillo A</p>
+                                <p class="descripcion">La canonicidad de cada libro varía dependiendo de la tradición adoptada. Según las religiones judía y cristiana, transmite la palabra de Dios.</p>
                             </div>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$220</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">Harry Potter</p>
+                                <p class="precio">Pasillo B</p>
+                                <p class="descripcion">Harry Potter es una heptalogía de novelas fantásticas escrita por la autora británica J. K. Rowling, en la que se describen las aventuras del joven aprendiz de mago Harry Potter.</p>
                             </div>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$620</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">El señor de los anillos</p>
+                                <p class="precio">Pasillo F</p>
+                                <p class="descripcion">El Señor de los Anillos es una novela de fantasía épica escrita por el filólogo y escritor británico J. R. R. Tolkien.</p>
                             </div>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$820</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">El alquimista</p>
+                                <p class="precio">Pasillo C</p>
+                                <p class="descripcion">El alquimista es un libro escrito por el escritor brasileño Paulo Coelho que ha sido traducido a más de 63 lenguas y publicado en 150 países.</p>
                             </div>
 
                         </article>
 
                         <article>
-                            <p class="categoria">De tomar</p>
+                            <p class="categoria">Lo mas popular </p>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$320</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">Crepúsculo</p>
+                                <p class="precio">Pasillo H</p>
+                                <p class="descripcion">Crepúsculo es una novela romántica de vampiros dirigida al público adolescente, escrita por Stephenie Meyer y publicada en 2005. .</p>
                             </div>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$220</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">El diario de Ana Frank</p>
+                                <p class="precio">Pasillo O</p>
+                                <p class="descripcion">relata su historia como adolescente y el tiempo de dos años cuando tuvo que ocultarse de los nazis en Ámsterdam, durante la Segunda Guerra Mundial.</p>
                             </div>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$620</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">Odisea, de Homero</p>
+                                <p class="precio">Pasillo H</p>
+                                <p class="descripcion">«Mientras los maderos están sujetos por las clavijas, seguiré aquí y sufriré los males que haya de padecer, y luego que las olas deshagan la balsa me pondré a nadar, pues no se me ocurre nada más provechoso.».</p>
                             </div>
 
                             <div class="platillo">
-                                <p class="nombre">Lorem ipsum dolor</p>
-                                <p class="precio">$820</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="nombre">El principito</p>
+                                <p class="precio">Pasillo K</p>
+                                <p class="descripcion">«He aquí mi secreto. Es muy simple: no se ve bien sino con el corazón. Lo esencial es invisible a los ojos».</p>
                             </div>
 
                         </article>
@@ -106,6 +121,7 @@
             </div>
         </section>
 
+        <!--
         <section class="galeria" id="galeria">
             <div class="foto">
                 <img src="img/1.jpg" alt="">
@@ -139,14 +155,14 @@
                 <img src="img/8.jpg" alt="">
             </div>
         </section>
-        
+        -->
         <section class="ubicacion" id="ubicacion">
             <div class="contenedor">
-                <h3 class="titulo">Ubicacion</h3>
+                <h3 class="titulo">Ubicación</h3>
                 <div class="direccion">
-                    <p class="calle">Tititl Mz. 16 Lt. 16 Secc. Moctezuma</p>
+                    <p class="calle">México-pachuca, San Martín Azcatepec, Méx.</p>
                     <p class="telefono">55 6312 6358</p>
-                    <p class="correo">restaurante@gmail.com</p>
+                    <p class="correo">elib-biblioteca@gmail.com</p>
                 </div>
 
                 <div class="horarios">
@@ -166,7 +182,7 @@
     <footer>
         <div class="contenedor">
             <div class="copy">
-                <p>Copyright Rogelio@ 2021</p>
+                <p>Copyright ELIB@ 2022</p>
             </div>
         </div>
     </footer>
