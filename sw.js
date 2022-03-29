@@ -67,6 +67,7 @@ self.addEventListener('activate', e => {
 });
 
 //Evento fetch
+
 self.addEventListener('fetch', e => {
     e.respondWith(
         caches.match(e.request)
@@ -79,3 +80,35 @@ self.addEventListener('fetch', e => {
             })
     );
 });
+/*
+//Evento para mostrar contenido sin conexion
+self.addEventListener('fetch', e => {
+    
+    const offLineResponse= new Response(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mi PWA</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="container p-3">
+        <h1 class="display-4">Bienvenido ELIB</h1>
+        <p>Disculpa pero para usarla, necesitas Internet D:<p>
+    </body>
+    </html>
+    `, {
+        headers: {
+            'Content-Type': 'text/html'
+        }
+    });
+
+    const resp = fetch(e.request)
+        .catch(() => offLineResponse);
+
+    e.respondWith(offLineResponse);
+    //e.respondWith(resp);
+})*/
