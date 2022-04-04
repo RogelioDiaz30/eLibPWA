@@ -80,7 +80,7 @@ self.addEventListener('fetch', e => {
             })
     );
 });
-/*
+
 //Evento para mostrar contenido sin conexion
 self.addEventListener('fetch', e => {
     
@@ -109,6 +109,6 @@ self.addEventListener('fetch', e => {
     const resp = fetch(e.request)
         .catch(() => offLineResponse);
 
-    e.respondWith(offLineResponse);
-    //e.respondWith(resp);
-})*/
+    //e.respondWith(offLineResponse);
+    e.respondWith(resp);
+})
